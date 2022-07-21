@@ -1,0 +1,261 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.cadre{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 1150px;
+    height: 78px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 805px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(0, 0, 216);
+}
+
+.logo img{
+    width: 75px;
+    height: 35px;
+}
+
+.burger{
+    background-image: url("img/burger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 25px;
+}
+
+.burger:hover{
+    background-image: url("img/burger_hover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 25px;
+}
+
+h1{
+    font-family: "roboto", sans-serif; 
+    font-size: 48px;
+    text-align: center;
+    width: 750px;
+}
+
+h2{
+    max-width: 75%;
+    color: grey;
+    font-family: "roboto", sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+p{
+    max-width: 75%;
+    color: grey;
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 2;
+}
+
+.icones{
+    width: 90px;
+    height: 90px;
+}
+
+.languettes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rose, .bleu, .violet, .orange{
+    margin: 15px;
+    background-color: white;
+    width: 260px;
+    height: 425px;
+    border-radius: 0% 0% 5% 5%;
+    box-shadow: 10px 10px 10px rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rose .languette{
+    background-color: #E142DC;
+    width: 260px;
+    height: 20px;
+}
+
+.bleu .languette{
+    background-color: #2CBECC;
+    width: 260px;
+    height: 20px;
+}
+
+.violet .languette{
+    background-color: #6751E7;
+    width: 260px;
+    height: 20px;
+}
+
+.orange .languette{
+    background-color: #F1C50E;
+    width: 260px;
+    height: 20px;
+}
+
+.bouton{
+    background-image: url("img/bouton_r.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 275px;
+    height: 52px;
+
+}
+
+.bouton:hover{
+    background-image: url("img/bouton_hover_r.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 275px;
+    height: 52px;
+}
+
+footer {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_txt{
+    font-family: "roboto", sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.reseaux_sociaux{
+width: 130px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.lien_reseau{
+    width: 25px;
+    height: 25px;
+}
+
+
+.burger:active + .menu{
+    display: block;
+}
+
+.menu{
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {transform: translate(-250px,0px);}
+    to {transform: translate(0px,0px);}
+  }
+  
+  @keyframes fadeIn {
+    from {transform: translate(-250px,0px);}
+    to {transform: translate(0px,0px);}
+  }
+
+
+
+.bord{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bord img{
+    width: 10%;
+    padding: 15px;
+    padding-left: 200px;
+}
+
+.bord a{
+    padding-top: 15px;
+    color: white;
+    line-height: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bord a:hover{
+    color: grey;
+    line-height: 10px;
+}
+
+.page{
+    position: relative;
+    left: 250px;
+    top: 0px;
+    width: 100%;
+    height: 100vw;
+
+    display: block;
+    -webkit-animation: fadeIn2 1s;
+    animation: fadeIn2 1s;
+} 
+
+
+@-webkit-keyframes fadeIn2 {
+    from {color: #0000;}
+    to {color: rgba(0, 0, 0, 0.63);}
+  }
+  
+  @keyframes fadeIn2 {
+    from {color: #0000;}
+    to {color: rgba(0, 0, 0, 0.63);}
+  }
